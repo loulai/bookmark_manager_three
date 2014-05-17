@@ -8,5 +8,5 @@ Then(/^I should find a greeting$/) do
 end
 
 Then(/^I should see boxes for me to add links$/) do
-	find_field('URL') && find_field('Name')
+	find_field('URL') && find_field('bookmarkname')
 end

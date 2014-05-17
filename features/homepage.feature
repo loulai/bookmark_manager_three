@@ -6,5 +6,6 @@ Scenario: visiting the homepage
 
 Scenario: how the homepage is set up
 	When I visit the homepage
-	Then I should see boxes for me to add links
+	Then I should find boxes for me to add links
+	And I should find the button to add the link
 	
