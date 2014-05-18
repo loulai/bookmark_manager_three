@@ -11,4 +11,5 @@ group :test, :development do
 	gem 'cucumber'
 	gem 'capybara'
 	gem 'rspec'
+	gem 'database_cleaner'
 end
