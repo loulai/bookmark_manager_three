@@ -1,4 +1,5 @@
 require 'link'
+require 'spec_helper'
 
 describe "a link" do
 	it "should have an id, url and name" do
