@@ -9,5 +9,4 @@ class Link
 		property :url, Text
 		property :name, Text
 
-
 end

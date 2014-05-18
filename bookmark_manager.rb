@@ -1,3 +1,13 @@
+env = ENV["RACK_ENV	"] || "development"
+
+DataMapper.setup(:default, "postgres://localhost/bookmark_manager#{}")
+
+require '.lib/link'
+
+DataMapper.finalize
+
+DataMapper.auto_upgrade!
+
 require 'sinatra/base'
 
 class BookmarkManager < Sinatra::Base
