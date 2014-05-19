@@ -1,6 +1,6 @@
 <!Doctype html>
 
-	<p>Hello BookmarkManager!</p>
+	<h1>Hello BookmarkManager!</h1>
 
 	<form>
 		<input type="text" id="URL" placeholder="add URL here">
@@ -8,3 +8,16 @@
 	</form>
 
 	<button type="submit" value="Add Bookmark">Add Bookmark</button>
+
+	<h2>Your Saved Links</h1>
+
+	<ul>
+
+		<% @all_links.each do |link| %>
+			<%print link%>
+		<%end%>
+
+	</ul>
+
+
+

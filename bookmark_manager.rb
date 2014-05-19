@@ -15,6 +15,7 @@ require 'sinatra/base'
 
 class BookmarkManager < Sinatra::Base
   get '/' do
+  	@all_links = Link.all
     erb :index
   end
 
