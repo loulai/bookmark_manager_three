@@ -10,7 +10,8 @@ Scenario: how the homepage is set up
 	And I should find the button that adds the link
 
 Scenario: the homepage without links
-	Given I haven't added any links
+	Given I visit the homepage
+	And I haven't added any links
 	Then I should see text saying I have no links
 
 # Scenario: adding a link

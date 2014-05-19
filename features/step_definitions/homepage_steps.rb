@@ -24,8 +24,9 @@ Given(/^I haven't added any links$/) do
 end
 
 Then(/^I should see text saying I have no links$/) do
-  
+  expect(page).to have_content('You currently have no saved bookmarks')
 end
 
 
 
+#aouf
