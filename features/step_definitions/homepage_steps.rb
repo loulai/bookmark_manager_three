@@ -19,15 +19,13 @@ end
 
 #-----
 
-Given(/^there are no links$/) do
-	Link.all.count == 0
+Given(/^I haven't added any links$/) do
+  expect(Link.all.count).to eq 0
 end
 
-When(/^I add a link$/) do
-  pending # express the regexp above with the code you wish you had
+Then(/^I should see text saying I have no links$/) do
+  
 end
 
-Then(/^I should see that link displayed$/) do
-  pending # express the regexp above with the code you wish you had
-end
+
 

@@ -9,9 +9,13 @@ Scenario: how the homepage is set up
 	Then I should find boxes for me to add links
 	And I should find the button that adds the link
 
-Scenario: adding a link
-	Given there are no links
-	When I visit the homepage
-	And I add a link
-	Then I should see that link displayed
-	
+Scenario: the homepage without links
+	Given I haven't added any links
+	Then I should see text saying I have no links
+
+# Scenario: adding a link
+# 	Given there are no links
+# 	When I visit the homepage
+# 	And I add a link
+# 	Then I should see that link displayed
+# 	

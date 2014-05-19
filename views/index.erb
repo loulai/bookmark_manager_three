@@ -11,13 +11,19 @@
 
 	<h2>Your Saved Links</h1>
 
+	<% if @all_links.count == 0 %>
+		<div>You currently have no saved bookmarks!</div>
+	<%end %>
+
 	<ul>
 
 		<% @all_links.each do |link| %>
-			<%print link%>
+			<li><a href="<%link.url%>"><%link.title%></a></li>
 		<%end%>
 
 	</ul>
+
+
 
 
 
